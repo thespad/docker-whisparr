@@ -1,6 +1,6 @@
 # [thespad/whisparr](https://github.com/thespad/docker-whisparr)
 
-[![GitHub Release](https://img.shields.io/github/release/thespad/docker-whisparr.svg?color=26689A&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/thespad/docker-whisparr/releases)
+[![GitHub Release](https://img.shields.io/github/release/thespad/docker-whisparr.svg?color=26689A&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github&include_prereleases)](https://github.com/thespad/docker-whisparr/releases)
 ![Commits](https://img.shields.io/github/commits-since/thespad/docker-whisparr/latest?color=26689A&include_prereleases&logo=github&style=for-the-badge)
 ![Image Size](https://img.shields.io/docker/image-size/thespad/whisparr/latest?color=26689A&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Size)
 [![Docker Pulls](https://img.shields.io/docker/pulls/thespad/whisparr.svg?color=26689A&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/thespad/whisparr)
