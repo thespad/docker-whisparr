@@ -37,6 +37,14 @@ target "armhf" {
   ]
 }
 
+target "64" {
+  inherits = ["image"]
+  platforms = [
+    "linux/amd64",
+    "linux/arm64"
+  ]
+}
+
 target "all" {
   inherits = ["image"]
   platforms = [
