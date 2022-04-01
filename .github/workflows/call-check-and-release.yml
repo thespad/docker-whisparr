@@ -1,0 +1,16 @@
+name: Check for update and release
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 11 * * *'
+
+jobs:
+  call-workflow:
+    uses: thespad/actions/.github/workflows/check-and-release.yml@v5
+    with:
+      repo_owner: ${{ github.repository_owner }}
+      app_name: "whisparr"
+      release_type: "script"
+    secrets:
+      repo_scoped_token: ${{ secrets.repo_scoped_token }}
