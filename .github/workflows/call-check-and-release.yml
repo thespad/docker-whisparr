@@ -12,5 +12,6 @@ jobs:
       repo_owner: ${{ github.repository_owner }}
       app_name: "whisparr"
       release_type: "script"
+      prerelease: true
     secrets:
       repo_scoped_token: ${{ secrets.repo_scoped_token }}
