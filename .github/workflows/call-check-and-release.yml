@@ -13,5 +13,6 @@ jobs:
       app_name: "whisparr"
       release_type: "script"
       prerelease: true
+      branch: nightly
     secrets:
       repo_scoped_token: ${{ secrets.repo_scoped_token }}

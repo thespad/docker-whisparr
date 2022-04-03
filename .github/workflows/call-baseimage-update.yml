@@ -12,5 +12,6 @@ jobs:
       baseimage: "alpine"
       basebranch: "3.15"
       app_name: "whisparr"
+      branch: nightly
     secrets:
       repo_scoped_token: ${{ secrets.repo_scoped_token }}
