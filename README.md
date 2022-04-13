@@ -7,7 +7,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/thespad/docker-whisparr.svg?color=26689A&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/thespad/docker-whisparr)
 [![Docker Stars](https://img.shields.io/docker/stars/thespad/whisparr.svg?color=26689A&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/thespad/whisparr)
 
-[![ci](https://img.shields.io/github/workflow/status/thespad/docker-whisparr/Check%20for%20update%20and%20release.svg?labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github&label=Check%20For%20Upstream%20Updates)](https://github.com/thespad/docker-whisparr/actions/workflows/call-chck-and-release.yml)
+[![ci](https://img.shields.io/github/workflow/status/thespad/docker-whisparr/Check%20for%20update%20and%20release.svg?labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github&label=Check%20For%20Upstream%20Updates)](https://github.com/thespad/docker-whisparr/actions/workflows/call-check-and-release.yml)
 [![ci](https://img.shields.io/github/workflow/status/thespad/docker-whisparr/Check%20for%20base%20image%20updates.svg?labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github&label=Check%20For%20Baseimage%20Updates)](https://github.com/thespad/docker-whisparr/actions/workflows/call-baseimage-update.yml)
 [![ci](https://img.shields.io/github/workflow/status/thespad/docker-whisparr/Build%20Image%20On%20Release.svg?labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github&label=Build%20Image)](https://github.com/thespad/docker-whisparr/actions/workflows/call-build-image.yml)
 
