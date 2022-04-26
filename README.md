@@ -25,6 +25,69 @@ The architectures supported by this image are:
 | arm64 | ✅ | latest |
 | armhf | ✅ | latest |
 
+## Application Setup
+
+Webui is accessible at `http://SERVERIP:PORT`
+
+## Usage
+
+Here are some example snippets to help you get started creating a container.
+
+### docker-compose ([recommended](https://docs.linuxserver.io/general/docker-compose))
+
+Compatible with docker-compose v2 schemas.
+
+```yaml
+---
+version: "2.1"
+services:
+  get_iplayer:
+    image: ghcr.io/thespad/whisparr:latest
+    container_name: whisparr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    volumes:
+      - </path/to/appdata/config>:/config
+      - </path/to/appdata/downloads>:/downloads
+    ports:
+      - 6969:6969
+    restart: unless-stopped
+```
+
+### docker cli
+
+```shell
+docker run -d \
+  --name=whisparr \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=America/New_York \
+  -p 6969:6969 \
+  -v </path/to/appdata/config>:/config \
+  -v </path/to/appdata/downloads>:/downloads \
+  --restart unless-stopped \
+  ghcr.io/thespad/whisparr:latest
+```
+
+## Parameters
+
+Container images are configured using parameters passed at runtime (such as those above). These parameters are separated by a colon and indicate `<external>:<internal>` respectively. For example, `-p 8080:80` would expose port `80` from inside the container to be accessible from the host's IP on port `8080` outside the container.
+
+| Parameter | Function |
+| :----: | --- |
+| `-p 6969` | Web GUI |
+| `-e PUID=1000` | for UserID - see below for explanation |
+| `-e PGID=1000` | for GroupID - see below for explanation |
+| `-e TZ=America/New_York` | Specify a timezone to use EG America/New_York |
+| `-v /config` | Contains all relevant configuration files. |
+| `-v /downloads` | Storage location for all get_iplayer download files. |
+
+### Image Update Notifications - Diun (Docker Image Update Notifier)
+
+* We recommend [Diun](https://crazymax.dev/diun/) for update notifications. Other tools that automatically update containers unattended are not recommended or supported.
+
 ## Versions
 
 * **01.04.22:** - Initial Release.
