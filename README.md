@@ -90,5 +90,5 @@ Container images are configured using parameters passed at runtime (such as thos
 
 ## Versions
 
-* **11.07.22:** - Rebase to 3.16, update for s6 v3.
+* **23.09.22:** - Rebase to 3.16, update for s6 v3.
 * **01.04.22:** - Initial Release.
