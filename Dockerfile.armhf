@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.15
+FROM ghcr.io/linuxserver/baseimage-alpine:3.16
 
 # set version label
 ARG BUILD_DATE
@@ -6,6 +6,8 @@ ARG VERSION
 ARG APP_VERSION
 LABEL build_version="Version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thespad"
+LABEL org.opencontainers.image.source="https://github.com/thespad/docker-whisparr"
+LABEL org.opencontainers.image.url="https://github.com/thespad/docker-whisparr"
 
 # environment settings
 ARG APP_BRANCH="nightly"
