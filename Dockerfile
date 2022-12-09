@@ -1,4 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.16
+# syntax=docker/dockerfile:1
+
+FROM ghcr.io/linuxserver/baseimage-alpine:3.17
 
 # set version label
 ARG BUILD_DATE
@@ -16,8 +18,6 @@ ENV XDG_CONFIG_HOME="/config/xdg"
 RUN \
   echo "**** install packages ****" && \
   apk add -U --upgrade --no-cache \
-    curl \
-    jq \
     icu-libs \
     sqlite-libs && \
   echo "**** install whisparr ****" && \
@@ -36,12 +36,12 @@ RUN \
   echo "**** cleanup ****" && \
   rm -rf \
     /app/whisparr/bin/Whisparr.Update \
-    /tmp/* \
-    /var/tmp/*
+    /tmp/*
 
 # copy local files
 COPY root/ /
 
 # ports and volumes
 EXPOSE 6969
+
 VOLUME /config
