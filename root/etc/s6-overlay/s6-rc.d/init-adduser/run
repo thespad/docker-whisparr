@@ -1,4 +1,5 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 PUID=${PUID:-911}
 PGID=${PGID:-911}
@@ -8,13 +9,6 @@ usermod -o -u "$PUID" abc
 
 echo '
 -------------------------------------
-          _         ()
-         | |  ___   _    __
-         | | / __| | |  /  \ 
-         | | \__ \ | | | () |
-         |_| |___/ |_|  \__/
-
-
 Base image provided by linuxserver.io
 -------------------------------------'
 if [[ -f /donate.txt ]]; then
@@ -50,6 +44,6 @@ Some apps might not behave correctly without this
 '
 fi
 
-chown abc:abc /app
-chown abc:abc /config
-chown abc:abc /defaults
+lsiown abc:abc /app
+lsiown abc:abc /config
+lsiown abc:abc /defaults
