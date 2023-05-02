@@ -10,6 +10,7 @@ LABEL build_version="Version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thespad"
 LABEL org.opencontainers.image.source="https://github.com/thespad/docker-whisparr"
 LABEL org.opencontainers.image.url="https://github.com/thespad/docker-whisparr"
+LABEL org.opencontainers.image.description="An adult movie collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new movies and will interface with clients and indexers to grab, sort, and rename them."
 
 # environment settings
 ARG APP_BRANCH="nightly"
