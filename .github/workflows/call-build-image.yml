@@ -17,6 +17,6 @@ jobs:
       release_type: "script"
       dockerhub_user: "thespad"
       target-arch: >-
-        ["amd64", "aarch64", "armhf"]
+        ["amd64", "aarch64"]
     secrets:
       dockerhub_password: ${{ secrets.DOCKER_PASSWORD }}
