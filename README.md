@@ -23,7 +23,7 @@ The architectures supported by this image are:
 | :----: | :----: | ---- |
 | x86-64 | ✅ | latest |
 | arm64 | ✅ | latest |
-| armhf | ✅ | latest |
+| armhf | ❌ | latest |
 
 ## Application Setup
 
@@ -90,6 +90,7 @@ Container images are configured using parameters passed at runtime (such as thos
 
 ## Versions
 
+* **14.05.23:** - Rebase to Alpine 3.18. Drop support for armhf.
 * **09.12.22:** - Rebase to 3.17.
 * **23.09.22:** - Rebase to 3.16, migrate to s6v3.
 * **01.04.22:** - Initial Release.
