@@ -37,7 +37,7 @@ Here are some example snippets to help you get started creating a container.
 ```yaml
 ---
 services:
-  get_iplayer:
+  whisparr:
     image: ghcr.io/thespad/whisparr:latest
     container_name: whisparr
     environment:
