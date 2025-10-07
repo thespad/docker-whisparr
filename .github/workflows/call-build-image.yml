@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  call-workflow-nightly:
-    uses: thespad/actions/.github/workflows/build-split-image.yml@v9.0.0
+  call-workflow-v3:
+    uses: thespad/actions/.github/workflows/build-split-image.yml@v9.0.1
     with:
       repo_owner: thespad
       app_name: "whisparr"
@@ -17,6 +17,6 @@ jobs:
       target-arch: >-
         ["amd64", "arm64v8"]
       sign_image: false
-      branch: v3
+      branch_name: v3
     secrets:
       dockerhub_password: ${{ secrets.DOCKER_PASSWORD }}
