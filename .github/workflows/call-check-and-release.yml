@@ -6,14 +6,14 @@ on:
     - cron:  '0 2 * * *'
 
 jobs:
-  call-workflow:
+  call-workflow-nightly:
     uses: thespad/actions/.github/workflows/check-and-release.yml@v9.0.0
     with:
       repo_owner: ${{ github.repository_owner }}
       app_name: "whisparr"
       release_type: "script"
       prerelease: true
-      branch: nightly
+      branch_name: nightly
       dockerhub_user: "thespad"
     secrets:
       repo_scoped_token: ${{ secrets.repo_scoped_token }}
