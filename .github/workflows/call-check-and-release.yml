@@ -13,7 +13,7 @@ jobs:
       app_name: "whisparr"
       release_type: "script"
       prerelease: true
-      branch: nightly
+      branch: v3
       dockerhub_user: "thespad"
     secrets:
       repo_scoped_token: ${{ secrets.repo_scoped_token }}

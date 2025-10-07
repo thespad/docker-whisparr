@@ -14,7 +14,7 @@ LABEL org.opencontainers.image.description="An adult movie collection manager fo
 LABEL org.opencontainers.image.authors="thespad"
 
 # environment settings
-ARG APP_BRANCH="nightly"
+ARG APP_BRANCH="eros"
 ENV XDG_CONFIG_HOME="/config/xdg"
 
 RUN \
