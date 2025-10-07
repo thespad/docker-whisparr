@@ -29,7 +29,7 @@ RUN \
     | jq -r '.[0].version'); \
   fi && \
   curl -Lo \
-    /tmp/whisparr.tar.gz -L \
+    /tmp/whisparr.tar.gz \
     "https://whisparr.servarr.com/v1/update/${APP_BRANCH}/updatefile?version=${APP_VERSION}&os=linuxmusl&runtime=netcore&arch=x64" && \
   tar xzf \
   /tmp/whisparr.tar.gz -C \
