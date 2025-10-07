@@ -21,8 +21,8 @@ The architectures supported by this image are:
 
 | Architecture | Available | Tag |
 | :----: | :----: | ---- |
-| amd64 | ✅ | latest |
-| arm64 | ✅ | latest |
+| amd64 | ✅ | v3 |
+| arm64 | ✅ | v3 |
 
 ## Version Tags
 
@@ -30,7 +30,7 @@ This image provides various versions that are available via tags. Please read th
 
 | Tag | Available | Description |
 | :----: | :----: |--- |
-| nightly | ✅ | v2 releases from Whisparr |
+| latest | ✅ | v2 releases from Whisparr |
 | v3 | ✅ | v3 releases from Whisparr |
 
 ## Application Setup
@@ -172,6 +172,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 
 ## Versions
 
+* **07.10.25:** - Add v3 branch.
 * **25.07.25:** - Rebase to Alpine 3.22.
 * **02.02.25:** - Rebase to Alpine 3.21.
 * **26.05.24:** - Rebase to Alpine 3.20.
