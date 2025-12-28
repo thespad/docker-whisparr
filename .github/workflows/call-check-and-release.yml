@@ -1,0 +1,33 @@
+name: Check for update and release
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 2 * * *'
+
+jobs:
+  call-workflow-nightly:
+    uses: thespad/actions/.github/workflows/check-and-release.yml@v9.0.3
+    with:
+      repo_owner: ${{ github.repository_owner }}
+      app_name: "whisparr"
+      release_type: "script"
+      prerelease: true
+      branch_name: nightly
+      dockerhub_user: "thespad"
+    secrets:
+      repo_scoped_token: ${{ secrets.repo_scoped_token }}
+      dockerhub_password: ${{ secrets.docker_password }}
+
+  call-workflow-v3:
+    uses: thespad/actions/.github/workflows/check-and-release.yml@v9.0.3
+    with:
+      repo_owner: ${{ github.repository_owner }}
+      app_name: "whisparr"
+      release_type: "script"
+      prerelease: true
+      branch_name: v3
+      dockerhub_user: "thespad"
+    secrets:
+      repo_scoped_token: ${{ secrets.repo_scoped_token }}
+      dockerhub_password: ${{ secrets.docker_password }}
