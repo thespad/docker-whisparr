@@ -24,7 +24,7 @@ jobs:
       baseimage: "alpine"
       basebranch: "3.22"
       app_name: "whisparr"
-      prerelease: true
+      prerelease: false
       branch_name: v3
     secrets:
       repo_scoped_token: ${{ secrets.repo_scoped_token }}
