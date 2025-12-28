@@ -30,7 +30,6 @@ This image provides various versions that are available via tags. Please read th
 
 | Tag | Available | Description |
 | :----: | :----: |--- |
-| latest | ✅ | v2 releases from Whisparr |
 | v3 | ✅ | v3 releases from Whisparr |
 
 ## Application Setup
