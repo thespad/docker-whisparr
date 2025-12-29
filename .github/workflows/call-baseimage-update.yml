@@ -25,6 +25,6 @@ jobs:
       basebranch: "3.22"
       app_name: "whisparr"
       prerelease: true
-      branch_name: nightly
+      branch_name: v2
     secrets:
       repo_scoped_token: ${{ secrets.repo_scoped_token }}
