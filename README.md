@@ -21,8 +21,8 @@ The architectures supported by this image are:
 
 | Architecture | Available | Tag |
 | :----: | :----: | ---- |
-| amd64 | ✅ | latest |
-| arm64 | ✅ | latest |
+| amd64 | ✅ | v2 |
+| arm64 | ✅ | v2 |
 
 ## Version Tags
 
@@ -30,7 +30,7 @@ This image provides various versions that are available via tags. Please read th
 
 | Tag | Available | Description |
 | :----: | :----: |--- |
-| latest | ✅ | v2 releases from Whisparr |
+| v2 | ✅ | v2 releases from Whisparr |
 | v3 | ✅ | v3 releases from Whisparr |
 
 ## Application Setup

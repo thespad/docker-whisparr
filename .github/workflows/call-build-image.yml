@@ -17,6 +17,6 @@ jobs:
       target-arch: >-
         ["amd64", "arm64v8"]
       sign_image: false
-      branch_name: nightly
+      branch_name: v2
     secrets:
       dockerhub_password: ${{ secrets.DOCKER_PASSWORD }}
