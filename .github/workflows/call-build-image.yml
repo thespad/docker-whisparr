@@ -8,7 +8,7 @@ on:
 
 jobs:
   call-workflow-v3:
-    uses: thespad/actions/.github/workflows/build-split-image.yml@v9.0.4
+    uses: thespad/actions/.github/workflows/build-split-image.yml@v9.0.7
     with:
       repo_owner: thespad
       app_name: "whisparr"
