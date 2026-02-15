@@ -6,23 +6,23 @@ on:
 
 jobs:
   call-workflow-v3:
-    uses: thespad/actions/.github/workflows/check-baseimage-update.yml@v9.0.7
+    uses: thespad/actions/.github/workflows/check-baseimage-update.yml@v9.0.78
     with:
       repo_owner: ${{ github.repository_owner }}
       baseimage: "alpine"
-      basebranch: "3.22"
+      basebranch: "3.23"
       app_name: "whisparr"
       prerelease: false
       branch_name: v3
     secrets:
       repo_scoped_token: ${{ secrets.repo_scoped_token }}
 
-  call-workflow-nightly:
-    uses: thespad/actions/.github/workflows/check-baseimage-update.yml@v9.0.7
+  call-workflow-v2:
+    uses: thespad/actions/.github/workflows/check-baseimage-update.yml@v9.0.8
     with:
       repo_owner: ${{ github.repository_owner }}
       baseimage: "alpine"
-      basebranch: "3.22"
+      basebranch: "3.23"
       app_name: "whisparr"
       prerelease: true
       branch_name: v2
