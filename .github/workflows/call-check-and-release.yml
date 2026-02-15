@@ -7,7 +7,7 @@ on:
 
 jobs:
   call-workflow-v3:
-    uses: thespad/actions/.github/workflows/check-and-release.yml@v9.0.7
+    uses: thespad/actions/.github/workflows/check-and-release.yml@v9.0.8
     with:
       repo_owner: ${{ github.repository_owner }}
       app_name: "whisparr"
@@ -19,8 +19,8 @@ jobs:
       repo_scoped_token: ${{ secrets.repo_scoped_token }}
       dockerhub_password: ${{ secrets.docker_password }}
 
-  call-workflow-nightly:
-    uses: thespad/actions/.github/workflows/check-and-release.yml@v9.0.7
+  call-workflow-v2:
+    uses: thespad/actions/.github/workflows/check-and-release.yml@v9.0.8
     with:
       repo_owner: ${{ github.repository_owner }}
       app_name: "whisparr"

@@ -172,6 +172,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 
 ## Versions
 
+* **15.02.26:** - Rebase to Alpine 3.23.
 * **07.10.25:** - Add v3 branch.
 * **25.07.25:** - Rebase to Alpine 3.22.
 * **02.02.25:** - Rebase to Alpine 3.21.
