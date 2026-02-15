@@ -6,7 +6,7 @@ on:
 
 jobs:
   call-workflow-v3:
-    uses: thespad/actions/.github/workflows/check-baseimage-update.yml@v9.0.78
+    uses: thespad/actions/.github/workflows/check-baseimage-update.yml@v9.0.8
     with:
       repo_owner: ${{ github.repository_owner }}
       baseimage: "alpine"
