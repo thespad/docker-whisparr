@@ -20,6 +20,7 @@ ENV XDG_CONFIG_HOME="/config/xdg"
 RUN \
   echo "**** install packages ****" && \
   apk add -U --upgrade --no-cache \
+    xmlstarlet \
     icu-libs \
     sqlite-libs && \
   echo "**** install whisparr ****" && \
