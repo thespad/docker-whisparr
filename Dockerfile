@@ -21,7 +21,8 @@ RUN \
   echo "**** install packages ****" && \
   apk add -U --upgrade --no-cache \
     icu-libs \
-    sqlite-libs && \
+    sqlite-libs \
+    xmlstarlet && \
   echo "**** install whisparr ****" && \
   mkdir -p /app/whisparr/bin && \
   if [ -z ${APP_VERSION+x} ]; then \
