@@ -8,11 +8,12 @@ on:
 
 jobs:
   call-workflow-v2:
-    uses: thespad/actions/.github/workflows/build-split-image.yml@v9.1.1
+    uses: thespad/actions/.github/workflows/build-split-image.yml@v9.1.3
     with:
       repo_owner: thespad
       app_name: "whisparr"
-      release_type: "script"
+      release_type: "github"
+      release_url: "https://api.github.com/repos/Whisparr/Whisparr"
       dockerhub_user: "thespad"
       target-arch: >-
         ["amd64", "arm64v8"]

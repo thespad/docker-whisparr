@@ -26,12 +26,12 @@ RUN \
   echo "**** install whisparr ****" && \
   mkdir -p /app/whisparr/bin && \
   if [ -z ${APP_VERSION+x} ]; then \
-    APP_VERSION=$(curl -sL "https://whisparr.servarr.com/v1/update/${APP_BRANCH}/changes?runtime=netcore&os=linuxmusl" \
-    | jq -r '.[0].version'); \
+    APP_VERSION=$(curl -s "https://api.github.com/repos/Whisparr/Whisparr/releases/latest" \
+    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
   fi && \
   curl -Lo \
     /tmp/whisparr.tar.gz \
-    "https://whisparr.servarr.com/v1/update/${APP_BRANCH}/updatefile?version=${APP_VERSION}&os=linuxmusl&runtime=netcore&arch=arm64" && \
+    "https://github.com/Whisparr/Whisparr/releases/download/${APP_VERSION}/Whisparr.${APP_VERSION#v}.linux-musl-arm64.tar.gz" && \
   tar xzf \
   /tmp/whisparr.tar.gz -C \
     /app/whisparr/bin --strip-components=1 && \
