@@ -12,7 +12,8 @@ jobs:
     with:
       repo_owner: thespad
       app_name: "whisparr"
-      release_type: "script"
+      release_type: "github"
+      release_url: "https://api.github.com/repos/Whisparr/Whisparr-Eros"
       dockerhub_user: "thespad"
       target-arch: >-
         ["amd64", "arm64v8"]
