@@ -11,7 +11,8 @@ jobs:
     with:
       repo_owner: ${{ github.repository_owner }}
       app_name: "whisparr"
-      release_type: "script"
+      release_type: "github"
+      release_url: "https://api.github.com/repos/Whisparr/Whisparr-Eros"
       prerelease: false
       branch_name: v3
       dockerhub_user: "thespad"
@@ -24,7 +25,8 @@ jobs:
     with:
       repo_owner: ${{ github.repository_owner }}
       app_name: "whisparr"
-      release_type: "script"
+      release_type: "github"
+      release_url: "https://api.github.com/repos/Whisparr/Whisparr"
       prerelease: true
       branch_name: v2
       dockerhub_user: "thespad"
