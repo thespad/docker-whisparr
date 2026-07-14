@@ -10,7 +10,7 @@ jobs:
     with:
       repo_owner: ${{ github.repository_owner }}
       baseimage: "alpine"
-      basebranch: "3.23"
+      basebranch: "3.24"
       app_name: "whisparr"
       prerelease: false
       branch_name: v3
@@ -22,7 +22,7 @@ jobs:
     with:
       repo_owner: ${{ github.repository_owner }}
       baseimage: "alpine"
-      basebranch: "3.23"
+      basebranch: "3.24"
       app_name: "whisparr"
       prerelease: true
       branch_name: v2
